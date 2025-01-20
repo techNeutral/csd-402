@@ -15,14 +15,16 @@ public class FullerAssignment3 {
             int startPosition = 6;
             int endPosition = 13;
             int lowerPowers = 0;
-            //loop for the last line in the pyramid
+            //loop till the last space in the pyramid
             int j = 0;
             while (j < 13) {
                 startPosition = startPosition - i;
+                //Find starting place for the line you are on place spaces until you get there
                 while (j < startPosition) {
                     System.out.print("   ");
                     j++;
                 }
+                //loup until the endposition placing powers of 2 in their proper place
                 endPosition = endPosition - (6 - i);
                 int powerCount = 0;
                 while (j < endPosition) {
