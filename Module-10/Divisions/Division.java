@@ -1,7 +1,8 @@
 /*
 Brett Fuller
-CSD-402 Assignment 10.2
-2/23/25
+CSD-402 Assignment 12.3 - 10.2 - redo
+3/6/25
+*REDO* Changed toString() to the abstract display method to be overridden by child classes.
 */
 //This is the abstract class for division. It provides base functionality for the two child classes of domestic and
 //international.
@@ -21,8 +22,5 @@ public abstract class Division {
     public int getAccountNumber() {
         return accountNumber;
     }
-    public String toString(){
-        String returnString = "Division Name: " + this.getDivisionName() + "\nAccount Number: " + this.getAccountNumber();
-        return returnString;
-    }
+    public abstract String display();
 }

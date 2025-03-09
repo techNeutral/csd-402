@@ -1,7 +1,8 @@
 /*
 Brett Fuller
-CSD-402 Assignment 10.2
-2/23/25
+CSD-402 Assignment 12.3 - 10.2 - redo
+3/6/25
+*REDO* Changed toString() to the display method.
 
  This program demonstrates Abstract classes by creating an abstract class and extending it in two other classes.
  I then demonstrate metod overrides by overriding the toString class to display the correct information for each
@@ -19,9 +20,9 @@ class UseDivision {
         DomesticDivision dDivision2 = new   DomesticDivision("San Francisco", 4502, "California");
         System.out.println();
         System.out.println("Divisions:\n");
-        System.out.println(iDivision1);
-        System.out.println(iDivision2);
-        System.out.println(dDivision1);
-        System.out.println(dDivision2);
+        System.out.println(iDivision1.display());
+        System.out.println(iDivision2.display());
+        System.out.println(dDivision1.display());
+        System.out.println(dDivision2.display());
     }
 }
